@@ -19,7 +19,7 @@ class StartScreen extends React.Component {
         <div>
           <div style={{ textAlign: 'center' }}>
             <img src={logo} alt="Logo" style={{ width: '100px', margin: '0 auto' }} />
-            <h1 style={{ fontSize: '2 em', textAlign: 'center' }}>Instagram</h1>
+            <h1 style={{ fontSize: '2 em', textAlign: 'center' }}>Instagram Clone</h1>
             <button className="button-62" onClick={this.loginRender}>
               Login
             </button>
@@ -65,7 +65,7 @@ class StartScreen extends React.Component {
 
         <div style={{ textAlign: 'center' }}>
           <img src={logo} alt="Logo" style={{ width: '80px', margin: '0 auto' }} />
-          <h1 style={{ fontSize: '2 em', textAlign: 'center' }}>Instagram</h1>
+          <h1 style={{ fontSize: '2 em', textAlign: 'center' }}>Instagram Clone</h1>
           <h2 style={{ color: '#ec3f62', fontSize: '1.2em', textAlign: 'center' }}>Sign Up</h2>
           <form action="" className="form">
             <input type="text" placeholder="Name" className="form__input" id="name" />
