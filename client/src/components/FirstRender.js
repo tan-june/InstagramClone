@@ -1,6 +1,7 @@
 import React from 'react';
 import StartScreen from './StartScreen';
 import HomePage from './HomePage';
+import NewPost from './NewPost';
 
 class FirstRender extends React.Component {
   constructor(props) {
@@ -17,8 +18,11 @@ class FirstRender extends React.Component {
   renderContent() {
     switch (this.state.currentPage) {
 
+      case 'newPost':
+        return <NewPost changeScreen={this.changeState} />
+
       case 'homePage':
-        return <HomePage />
+        return <HomePage changeScreen={this.changeState} />
 
       case 'startScreen':
       default:

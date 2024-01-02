@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/logo.png';
+import logo from '../images/logofront.png';
 
 class StartScreen extends React.Component {
   constructor(props) {
@@ -63,13 +63,13 @@ class StartScreen extends React.Component {
       content: (
         <div>
           <div style={{ textAlign: 'center' }}>
-            <img src={logo} alt="Logo" style={{ width: '80px', margin: '0 auto' }} />
-            <h1 style={{ fontSize: '2em', textAlign: 'center' }}>Instagram Clone</h1>
+          <img src={logo} alt="Logo" style={{ width: '300px', margin: '0 auto' }} />
+            <h1 style={{ margin: '0', fontSize: '1em', textAlign: 'center' }}>Clone</h1>
             <h2 style={{ color: '#ec3f62', fontSize: '1.2em', textAlign: 'center' }}>Login</h2>
 
             <form action="" className="form">
-              <input type="text" placeholder="Username/Email*" className="form__input" id="logina" required />
-              <input type="password" placeholder="Password*" className="form__input" id="loginb" required />
+              <input type="text" placeholder="Username/Email*" className="inputText" id="logina" required />
+              <input type="password" placeholder="Password*" className="inputText" id="loginb" required />
             </form>
             <button className="button-62" onClick={this.firstRender}>
               Cancel
@@ -87,15 +87,15 @@ class StartScreen extends React.Component {
     this.setState({
       content: (
         <div style={{ textAlign: 'center' }}>
-          <img src={logo} alt="Logo" style={{ width: '80px', margin: '0 auto' }} />
-          <h1 style={{ fontSize: '2em', textAlign: 'center' }}>Instagram Clone</h1>
+            <img src={logo} alt="Logo" style={{ width: '300px', margin: '0 auto' }} />
+            <h1 style={{ margin: '0', fontSize: '1em', textAlign: 'center' }}>Clone</h1>
           <h2 style={{ color: '#ec3f62', fontSize: '1.2em', textAlign: 'center' }}>Sign Up</h2>
           <form action="" className="form">
-            <input type="text" placeholder="Name*" className="form__input" id="name" required />
-            <input type="text" placeholder="Username*" className="form__input" id="username" required />
-            <input type="email" placeholder="Email*" className="form__input" id="email" required />
-            <input type="password" placeholder="Password*" className="form__input" id="1pass" required />
-            <input type="password" placeholder="Confirm Password*" className="form__input" id="2pass" required />
+            <input type="text" placeholder="Name*" className="inputText" id="name" required />
+            <input type="text" placeholder="Username*" className="inputText" id="username" required />
+            <input type="email" placeholder="Email*" className="inputText" id="email" required />
+            <input type="password" placeholder="Password*" className="inputText" id="1pass" required />
+            <input type="password" placeholder="Confirm Password*" className="inputText" id="2pass" required />
           </form>
           <br />
           <button className="button-62" onClick={this.firstRender}>
