@@ -6,6 +6,7 @@ import profile from '../images/profile.png';
 import home from '../images/home.png';
 import refresh from '../images/refresh.png';
 import logout from '../images/logout.png';
+import Profile from './Profile';
 
 class HomePage extends React.Component {
   
@@ -26,6 +27,9 @@ class HomePage extends React.Component {
       case 'newPost':
       return <NewPost changeScreen={this.changeScreen} />;
 
+      case 'Profile':
+        return <Profile changeScreen={this.changeScreen} />;
+      
       case 'Standard':
       default:
         return (<h1>Standard.</h1>);
@@ -54,7 +58,7 @@ class HomePage extends React.Component {
               <a href="#home" onClick={() => this.changeScreen('Home')} title="Go to Home">
                 <img src={home} alt="Home" style={{ width: '45px', height: '45px', marginLeft: '20px' }} />
               </a>
-              <a href="#profile" onClick={() => this.changeScreen('profile')} title="Profile">
+              <a href="#profile" onClick={() => this.changeScreen('Profile')} title="Profile">
                 <img src={profile} alt="Profile" style={{ width: '45px', height: '45px', marginLeft: '20px' }} />
               </a>
               <a href="#logout" onClick={() => this.changeScreen('logout')} title="Logout">

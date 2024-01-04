@@ -6,7 +6,7 @@ const user = mongoose.schema({
     password: {type: String, required:true},
     sessions: {type: String, default: ''},
     joinDate: {type: Date, default: Date.now},
-    // posts: [],
+    posts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }]
 });
 
 const User = mongoose.model('User', user);

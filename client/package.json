@@ -10,6 +10,7 @@
     "certbot": "^5.0.3",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
+    "multer": "^1.4.5-lts.1",
     "nanoid": "^5.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

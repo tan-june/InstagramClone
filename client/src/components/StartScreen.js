@@ -29,7 +29,7 @@ class StartScreen extends React.Component {
       const password2 = document.getElementById('2pass').value;
 
       if (name.length !== 0 && username.length !== 0 && email.includes('@') && password1 === password2) {
-        //axios query
+        //Pending Axios Query
         this.props.changeScreen('homePage');
       }
     }
@@ -43,11 +43,11 @@ class StartScreen extends React.Component {
             <img src={logo} alt="Logo" style={{ width: '300px', margin: '0 auto' }} />
             <h1 style={{ margin: '0', fontSize: '1em', textAlign: 'center' }}>Clone</h1>
             <br />
-            <button className="button-62" onClick={this.loginRender}>
-              Login
-            </button>
             <button className="button-62" onClick={this.signUpRender}>
               Sign Up
+            </button>
+            <button className="button-62" onClick={this.loginRender}>
+              Login
             </button>
             <button className="button-62" onClick={() => this.props.changeScreen('homePage')}>
               Guest
